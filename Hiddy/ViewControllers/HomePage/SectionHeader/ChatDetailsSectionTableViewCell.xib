@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="ChatDetailsSectionTableViewCell" customModule="Hiddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8k-OQ-Fvb">
+                        <rect key="frame" x="10" y="10" width="300" height="84.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HyO-uK-Yub">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="84.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HLZ-Aa-ij9">
+                                        <rect key="frame" x="15" y="10" width="270" height="64.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock_white" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-Y8-Z2I">
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="6Kd-72-WnZ"/>
+                                                    <constraint firstAttribute="width" constant="15" id="hR9-KI-X5m"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message to this chat and calls are secured with end-to-end encryption. Tap for more info." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01l-Vi-308">
+                                                <rect key="frame" x="17" y="0.0" width="253" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HLZ-Aa-ij9" firstAttribute="leading" secondItem="HyO-uK-Yub" secondAttribute="leading" constant="15" id="0hh-HD-cfu"/>
+                                    <constraint firstAttribute="trailing" secondItem="HLZ-Aa-ij9" secondAttribute="trailing" constant="15" id="BSv-iH-Vyq"/>
+                                    <constraint firstAttribute="bottom" secondItem="HLZ-Aa-ij9" secondAttribute="bottom" constant="10" id="Jq9-qQ-rzv"/>
+                                    <constraint firstItem="HLZ-Aa-ij9" firstAttribute="top" secondItem="HyO-uK-Yub" secondAttribute="top" constant="10" id="kkm-TN-l6D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HyO-uK-Yub" firstAttribute="leading" secondItem="d8k-OQ-Fvb" secondAttribute="leading" id="8qW-QG-fl8"/>
+                            <constraint firstItem="HyO-uK-Yub" firstAttribute="top" secondItem="d8k-OQ-Fvb" secondAttribute="top" id="BpN-zI-HY4"/>
+                            <constraint firstAttribute="bottom" secondItem="HyO-uK-Yub" secondAttribute="bottom" id="QJg-QW-cCB"/>
+                            <constraint firstAttribute="trailing" secondItem="HyO-uK-Yub" secondAttribute="trailing" id="bHz-m3-WGm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d8k-OQ-Fvb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4kN-WP-b8b"/>
+                    <constraint firstItem="d8k-OQ-Fvb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6aF-QQ-HeF"/>
+                    <constraint firstAttribute="trailing" secondItem="d8k-OQ-Fvb" secondAttribute="trailing" constant="10" id="VBV-3z-Qhi"/>
+                    <constraint firstItem="d8k-OQ-Fvb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="W8x-aC-I3P"/>
+                    <constraint firstAttribute="bottom" secondItem="d8k-OQ-Fvb" secondAttribute="bottom" constant="5" id="Yqh-bm-ugn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundShadowView" destination="d8k-OQ-Fvb" id="dwc-OD-GaX"/>
+                <outlet property="encryptionTextLabel" destination="01l-Vi-308" id="BkV-Ty-pKz"/>
+                <outlet property="gradientView" destination="HyO-uK-Yub" id="j6N-kA-Mh7"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="179.91004497751126"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lock_white" width="64" height="64"/>
+    </resources>
+</document>

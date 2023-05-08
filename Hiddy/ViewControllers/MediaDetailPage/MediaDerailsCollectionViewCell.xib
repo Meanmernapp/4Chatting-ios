@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MediaDerailsCollectionViewCell" customModule="Hiddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="172"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="172"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8dc-zW-7rn">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="172"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOg-ci-Shf">
+                        <rect key="frame" x="79" y="64" width="45" height="45"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="video_play" translatesAutoresizingMaskIntoConstraints="NO" id="UnP-9M-E9c">
+                                <rect key="frame" x="13" y="13" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.62564212330000002" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="gCN-Fa-ifN"/>
+                            <constraint firstAttribute="height" constant="45" id="tTW-L2-R5R"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8dc-zW-7rn" secondAttribute="trailing" id="dtV-JA-OIw"/>
+                <constraint firstAttribute="bottom" secondItem="8dc-zW-7rn" secondAttribute="bottom" id="kx5-Dd-pcz"/>
+                <constraint firstItem="ZOg-ci-Shf" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="p0b-UZ-Mvk"/>
+                <constraint firstItem="8dc-zW-7rn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wFY-ZY-Ck1"/>
+                <constraint firstItem="ZOg-ci-Shf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="x3D-vf-9re"/>
+                <constraint firstItem="8dc-zW-7rn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xCE-qV-kSS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="202" height="172"/>
+            <connections>
+                <outlet property="imageView" destination="8dc-zW-7rn" id="68j-m2-6gI"/>
+                <outlet property="playerImageView" destination="UnP-9M-E9c" id="vFY-fM-Cn5"/>
+                <outlet property="playerView" destination="ZOg-ci-Shf" id="d0B-HV-rnM"/>
+            </connections>
+            <point key="canvasLocation" x="259.19999999999999" y="174.51274362818592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="video_play" width="64" height="64"/>
+    </resources>
+</document>

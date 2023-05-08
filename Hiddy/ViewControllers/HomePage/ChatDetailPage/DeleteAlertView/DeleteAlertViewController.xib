@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteAlertViewController" customModule="Hiddy" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="JvS-WX-Gx5" id="iAQ-D9-aSL"/>
+                <outlet property="deleteForEveryoneButton" destination="EYa-vb-ByA" id="CBx-EZ-B73"/>
+                <outlet property="deleteForMeButton" destination="HyJ-g1-gBC" id="pZN-hg-ffd"/>
+                <outlet property="messageTitleLabel" destination="GTT-Y0-Jx6" id="348-bt-Pdw"/>
+                <outlet property="popupView" destination="0gl-W2-Ghu" id="sD2-af-asy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gl-W2-Ghu">
+                    <rect key="frame" x="30" y="248.5" width="315" height="170.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="evB-cB-xq8">
+                            <rect key="frame" x="20" y="15" width="275" height="140.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure want to clear this chat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTT-Y0-Jx6">
+                                    <rect key="frame" x="0.0" y="0.0" width="275" height="20.5"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyJ-g1-gBC">
+                                    <rect key="frame" x="0.0" y="30.5" width="275" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="DELETE FOR ME"/>
+                                    <connections>
+                                        <action selector="deleteForMeButtonAct:" destination="-1" eventType="touchUpInside" id="npc-kA-2Cf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvS-WX-Gx5">
+                                    <rect key="frame" x="0.0" y="70.5" width="275" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="CANCEL"/>
+                                    <connections>
+                                        <action selector="cancelButtonAct:" destination="-1" eventType="touchUpInside" id="8lO-Dz-lBV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYa-vb-ByA">
+                                    <rect key="frame" x="0.0" y="110.5" width="275" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="DELETE FOR EVERYONE"/>
+                                    <connections>
+                                        <action selector="deleteForEveryoneButtonAct:" destination="-1" eventType="touchUpInside" id="1uz-vq-AeT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="HyJ-g1-gBC" secondAttribute="trailing" id="7Ox-yP-BrE"/>
+                                <constraint firstItem="EYa-vb-ByA" firstAttribute="leading" secondItem="evB-cB-xq8" secondAttribute="leading" id="87d-2f-KzM"/>
+                                <constraint firstItem="GTT-Y0-Jx6" firstAttribute="leading" secondItem="evB-cB-xq8" secondAttribute="leading" id="FRJ-LX-VIS"/>
+                                <constraint firstItem="JvS-WX-Gx5" firstAttribute="leading" secondItem="evB-cB-xq8" secondAttribute="leading" id="Jbx-3O-T21"/>
+                                <constraint firstAttribute="trailing" secondItem="JvS-WX-Gx5" secondAttribute="trailing" id="lx9-Em-Hjw"/>
+                                <constraint firstAttribute="trailing" secondItem="EYa-vb-ByA" secondAttribute="trailing" id="m7M-po-Ehg"/>
+                                <constraint firstAttribute="trailing" secondItem="GTT-Y0-Jx6" secondAttribute="trailing" id="vht-xq-QPY"/>
+                                <constraint firstItem="HyJ-g1-gBC" firstAttribute="leading" secondItem="evB-cB-xq8" secondAttribute="leading" id="vyb-6r-FOt"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="evB-cB-xq8" firstAttribute="top" secondItem="0gl-W2-Ghu" secondAttribute="top" constant="15" id="1Eb-FH-wLv"/>
+                        <constraint firstAttribute="bottom" secondItem="evB-cB-xq8" secondAttribute="bottom" constant="15" id="DGR-56-GkD"/>
+                        <constraint firstAttribute="trailing" secondItem="evB-cB-xq8" secondAttribute="trailing" constant="20" id="SGI-ZI-20p"/>
+                        <constraint firstItem="evB-cB-xq8" firstAttribute="leading" secondItem="0gl-W2-Ghu" secondAttribute="leading" constant="20" id="atf-5x-0uX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0gl-W2-Ghu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3us-lO-iXy"/>
+                <constraint firstItem="0gl-W2-Ghu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="M2M-vj-Abq"/>
+                <constraint firstItem="0gl-W2-Ghu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="lVa-Gf-sh0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

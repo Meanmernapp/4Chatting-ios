@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1CDA61FE-9788-489A-B4E9-1D5FFE844F9E"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFC6102B-EC10-4C20-84AF-E825C7963D75"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hiddy/ViewControllers/HomePage/ChatDetailPage/ChatDetailPage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3413"
+            endingLineNumber = "3413"
+            landmarkName = "uploadThumbnail(msgDict:requestDict:attachData:fileURL:type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C33179A-7307-467C-9118-48FFEFD94184"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hiddy/ViewControllers/HomePage/ChatDetailPage/ChatDetailPage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2537"
+            endingLineNumber = "2537"
+            landmarkName = "videoCellBtnTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5F9E4A2-2BD2-4A6C-9BAF-B6EED8D0FFFE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hiddy/ViewControllers/HomePage/ChatDetailPage/ChatDetailPage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3494"
+            endingLineNumber = "3494"
+            landmarkName = "gotSocketInfo(dict:type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B28C0A3-AC50-418F-AFCD-4CB08DCD7AE4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hiddy/ViewControllers/StatusView/ShareStory/ShareStoryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "662"
+            endingLineNumber = "662"
+            landmarkName = "keyboardWillShow(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2B28C0A3-AC50-418F-AFCD-4CB08DCD7AE4 - b9bd8364dc2c1136"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hiddy.ShareStoryViewController.keyboardWillShow(sender: __C.NSNotification) -&gt; ()"
+                  moduleName = "Hiddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/htsmac2018/Documents/Chandrika/Product/hiddy/Hiddy/ViewControllers/StatusView/ShareStory/ShareStoryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "662"
+                  endingLineNumber = "662"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "2B28C0A3-AC50-418F-AFCD-4CB08DCD7AE4 - b9bd8364dc2c1136"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hiddy.ShareStoryViewController.keyboardWillShow(sender: __C.NSNotification) -&gt; ()"
+                  moduleName = "Hiddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/htsmac2018/Documents/Chandrika/Product/hiddy/Hiddy/ViewControllers/StatusView/ShareStory/ShareStoryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "662"
+                  endingLineNumber = "662"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E781AFB8-FCC9-43DB-9C7F-11943CFEDEFA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hiddy/ViewControllers/StatusView/ShareStory/ShareStoryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "669"
+            endingLineNumber = "669"
+            landmarkName = "keyboardWillHide(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
